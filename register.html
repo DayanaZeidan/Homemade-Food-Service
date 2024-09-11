@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Registerstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="icon">
+            <i class="fa fa-heart" style="font-size:24px; margin-top: 23px; color:brown; padding-left: 5px;"></i>
+            <span class="logo-text"><i class="cooking" style="margin-right: 0.2em"></i>Food<span
+                    style="color: #f09d51; font-size: 1.1em;">Lover</span></span>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="menu2">
+            <ul>
+
+                <li class="search-btn">
+                    <a href="" class="search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </li>
+                <li class="Login-btn">
+                    <a href="register.html" id="registration" class="btn-Register"><i class="fa fa-user-o"
+                            aria-hidden="true"></i></a>
+                </li>
+
+                <li class="cart">
+                    <a href="" class="mycart"><i class="fa fa-shopping-cart"
+                            style="font-size:24px; margin-top: 10px;"></i></a>
+                    <div class="number-of-items"><span class="noi">0</span></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Login section-->
+    <div class="customer-login-section">
+        <h1 class="login" tabindex="-1">
+            Login
+        </h1>
+        <div class="myfield">
+            <div class="field">
+                <input type="email" name="email" id="CustomerEmail" autocomplete="email" autocorrect="off"
+                    autocapitalize="off" placeholder="Email">
+            </div>
+            <div class="field">
+                <input type="password" value="" name="customer[password]" id="CustomerPassword"
+                    autocomplete="current-password" placeholder="Password">
+            </div>
+
+            <div>
+                <a href="">
+                    Forgot your password?
+                </a>
+            </div>
+
+            <div>
+                <button class="signin">
+                    Sign in
+                </button>
+            </div>
+
+            <div class="create">
+                <a href="create-account.html">
+                    Create account
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact us-->
+    <footer>
+        <section class="contact" id="contact">
+            <div class="conact-content">
+                <div class="contact-img">
+                    <div class="c-one">
+                        <img src=".images/google2.png">
+                        <img src=".images/appstore.png">
+                    </div>
+                    <div class="contact-text">
+                        <h4>Contact Us</h4>
+                        <p>We connect you with the business owners. You can Place an order or order a delivery
+                            directly. We provide you homemade food with a high quality (baking, desserts, daily dishes)
+                        </p>
+
+                        <div class="social">
+                            <a href="https://instagram.com/akletelmama_?igshid=OGQ5ZDc2ODk2ZA==" class="clr"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.github.com/"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                            <a href="https://www.google.com/"><i class="fa fa-google-plus-square"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="main-d">
+                            <a href="https://www.maps.com/"><i class="fa fa-location-arrow"
+                                    aria-hidden="true"></i>Araya, main street</a>
+                        </div>
+
+                        <div class="main-d">
+                            <a href=""><i class="fa fa-mobile" aria-hidden="true"></i>+961-81826355</a>
+                        </div>
+
+                        <div class="main-d">
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>FoodLover</a>
+                        </div>
+
+                        <div class="main-d">
+                            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="field2">
+                <h4>Subscribe to our emails</h4>
+                <input type="email" name="customer[email]" id="CustomerEmail" autocomplete="email" autocorrect="off"
+                    autocapitalize="off" placeholder="Email">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menustyle.css">
+</head>
+
+
+<body class="">
+     <!--Navbar-->
+     <nav class="navbar">
+        <div class="icon">
+            <i class="fa fa-heart" style="font-size:24px; margin-top: 23px; color:brown; padding-left: 5px;"></i>
+            <span class="logo-text"><i class="cooking" style="margin-right: 0.2em"></i>Food<span
+                    style="color: #f09d51; font-size: 1.1em;">Lover</span></span>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="menu2">
+            <ul>
+                <li class="search-btn">
+                    <a href="" class="search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </li>
+                <li class="Login-btn">
+                    <a href="register.html" id="registration" class="btn-Register"><i class="fa fa-user-o"
+                            aria-hidden="true"></i></a>
+                </li>
+
+                <li class="cart">
+                    <a class="mycart" onclick="hidemenu()"> <i class="fa fa-shopping-cart"
+                        style="font-size:24px; margin-top: 10px;"></i></a>
+                    <div class="number-of-items"><span class="noi">0</span></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="con"> 
+        <div class="myheader">
+            <h3>&mdash; Menu &mdash;</h3>
+        </div>
+
+        <div class="menuu">
+            <div class="menuHeader">
+                <div class="InputContainer">
+                    <input placeholder="Search for an item" id="input" class="input" name="text" type="text">
+                </div>
+
+                <!-- <div class="buttons">
+                    <ul>
+                        <li style="margin-left: -60px;"><a href=""><span class="btn-labels">Starters</span></a></li>
+                        <li><a href=""><span class="btn-labels">Pasta</span></a></li>
+                        <li><a href=""><span class="btn-labels">Salads</span></a></li>
+                        <li><a href=""><span class="btn-labels">Tabkha</span></a></li>
+                        <li><a href=""><span class="btn-labels">wraps</span></a></li>
+                        <li><a href=""><span class="btn-labels">desserts</span></a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="food-types">
+            <section class="starters-section">
+                <div class="all-Starters">
+                    <div class="Starters-header">
+                        <span class="title">
+                            <img src=".images/potatoes_9205908.png" alt="Starters" width="40px" height="40px"
+                                class="d-inline-block mr-3">
+                            <h1 class="d-inline-block" style="color: #000000">Starters</h1>
+                        </span>
+                        <span class="action"><i class="fa fa-angle-down rotate-icon"></i></span>
+                    </div>
+                </div>
+
+                <div class="all-div">
+                    <div class="food-menu">
+                        <div class="food-items">
+                            <img src=".images/chili cheese.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Chilli Cheese Nachos</h5>
+                                    <h5 class="price"> $5 </h5>
+                                </div>
+                                <p>Chedar Cheese Chilli Nachos</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/mozarella stickss.jfif">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Mozarella Sticks</h5>
+                                    <h5 class="price"> $6 </h5>
+                                </div>
+                                <p>5 pieces of Mozarella Sticks</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/grilled baby potato.jfif">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Grilled Baby Potato</h5>
+                                    <h5 class="price"> $3 </h5>
+                                </div>
+                                <p></p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/fried-rings-with-sweet-chili.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Onion Rings</h5>
+                                    <h5 class="price"> $4 </h5>
+                                </div>
+                                <p> White onions, battered with a subtle blend of spices with BQQ sauce</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- <p>shrimp, cornstarch, Tablespoons vegetable oil, Thinly sliced green onions</p> -->
+
+                        <div class="food-items">
+                            <img src=".images/5038.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">French Fries</h5>
+                                    <h5 class="price"> $3.50 </h5>
+                                </div>
+                                <p>Medium plate of Fries</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/fried-potatoes.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Wedges</h5>
+                                    <h5 class="price"> $4.50 </h5>
+                                </div>
+                                <p>Medium Plate of Wedges</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="pasta-section">
+                <div class="all-Starters">
+                    <div class="Starters-header">
+                        <span class="title">
+                            <img src=".images/pasta-icon.png" alt="Starters" width="40px" height="40px"
+                                class="d-inline-block mr-3">
+                            <h1 class="d-inline-block" style="color: #000000">Pasta</h1>
+                        </span>
+                        <span class="action"><i class="fa fa-angle-down rotate-icon"></i></span>
+                    </div>
+                </div>
+
+                <div class="all-div">
+                    <div class="food-menu">
+                        <div class="food-items">
+                            <img src=".images/tuna pasta salad.jpeg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Tuna Pasta Salad</h5>
+                                    <h5 class="price"> $5 </h5>
+                                </div>
+                                <p>Chedar Cheese Chilli Nachos</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/tomato pasta.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Tomato Sauce pasta</h5>
+                                    <h5 class="price"> $6 </h5>
+                                </div>
+                                <p>5 pieces of Mozarella Sticks</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/lassanya.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Lassanya</h5>
+                                    <h5 class="price"> $7 </h5>
+                                </div>
+                                <p>Beef Lassanya and mozarella cheese</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/pasta-spaghetti-with-shrimps.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Shrimps Pasta</h5>
+                                    <h5 class="price"> $6 </h5>
+                                </div>
+                                <p>Pasta spaghetti with shrimps and tomato sauce</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/penne pasta.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Penne Pasta</h5>
+                                    <h5 class="price"> $5.50 </h5>
+                                </div>
+                                <p>Penne pasta in tomato sauce with meat,
+                                    tomatoes decorated</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/penne-pasta-with-pesto-sauce.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Penne pasta with pesto sauce</h5>
+                                    <h5 class="price"> $10 </h5>
+                                </div>
+                                <p>penne pasta with pesto sauce, zucchini, green peas and basil</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            </section>
+
+            <section class="salad-section">
+                <div class="all-Starters">
+                    <div class="Starters-header">
+                        <span class="title">
+                            <img src=".images/salads_5990466.png" alt="Starters" width="40px" height="40px"
+                                class="d-inline-block mr-3">
+                            <h1 class="d-inline-block" style="color: #000000">Salads</h1>
+                        </span>
+                        <span class="action"><i class="fa fa-angle-down rotate-icon"></i></span>
+                    </div>
+                </div>
+
+                <div class="all-div">
+                    <div class="food-menu">
+                        <div class="food-items">
+                            <img src=".images/Ceasar salad.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Ceasar Salad</h5>
+                                    <h5 class="price"> $10 </h5>
+                                </div>
+                                <p>classic chicken caesar salad with grated parmesan and crackers</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/dietary-salad.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Greek Salad</h5>
+                                    <h5 class="price"> $8 </h5>
+                                </div>
+                                <p>Mixed green and cheese salad</p>
+                                <button class="addme">
+                                    <span>Add to Card</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/fresh-salad.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Turkey Egg Salad</h5>
+                                    <h5 class="price"> $9 </h5>
+                                </div>
+                                <p>Fresh salad with turkey eggs and vegetables</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/tabouleh.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Tabouleh</h5>
+                                    <h5 class="price"> $5 </h5>
+                                </div>
+                                <p>Labanese tabouleh salad</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/rocca-salad-5.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Rocca Salad</h5>
+                                    <h5 class="price"> $5.50 </h5>
+                                </div>
+                                <p>Rocca healthy salad</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <img src=".images/beetsalad.jpg">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5 class="item-name">Beet Salad</h5>
+                                    <h5 class="price"> $9 </h5>
+                                </div>
+                                <p>Beet Salad with balsamic and goat cheese</p>
+                                <button class="addme">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="all-cart">
+        <div class="itemscart" id="productList">
+            <h1>&mdash; My Cart &mdash;</h1>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
